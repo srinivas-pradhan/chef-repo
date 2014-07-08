@@ -10,8 +10,8 @@ validation_key           "#{current_dir}/spradh02-validator.pem"
 chef_server_url          "https://api.opscode.com/organizations/spradh02"
 cache_type               'BasicFile'
 cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
-cookbook_path            ["#{current_dir}/../cookbooks"]
+cookbook_path            ["#{current_dir}/../cookbooks/"]
 cookbook_copyright "spradh02"
 cookbook_license "apachev2"
 cookbook_email_address "srin64@me.com"
-
+knife[:editor]="vim"
